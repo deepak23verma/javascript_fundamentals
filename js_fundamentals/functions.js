@@ -11,7 +11,7 @@
 
 function tellFortune(numberOfChildren, partnersName, geographicLocation, jobTitle) { 
 	alert("You will be a " + jobTitle + " in " + geographicLocation + ", and married to " + partnersName + " with " + numberOfChildren + " kids.");
-}
+};
 
 tellFortune(5, "Veroncia", "New York", "Baseball Player");
 tellFortune(12, "Natalie Portman", "Mumbai", "Movie Star");
@@ -33,7 +33,7 @@ function calculateAge(birthYear, currentYear) {
 	var age1 = currentYear - birthYear;
 	var age2 = age1 - 1;
 	alert("You are either " + age1 + " or " + age2 + ".");
-}
+};
 
 var currentYear = (new Date()).getFullYear();
 calculateAge(1977, currentYear);
@@ -54,7 +54,7 @@ function calculateSuppy(age, amountPerDay) {
 	var constantMaxAge = 92;
 	var supplyNeeded = ((constantMaxAge - age) * 365) * amountPerDay;
 	alert("You will need " + supplyNeeded.toFixed(0) + " to last you until the ripe old age of " + constantMaxAge + ".");
-}
+};
 
 calculateSuppy(14, 8.3);
 calculateSuppy(36, 1.123);
@@ -76,14 +76,14 @@ calculateSuppy(27, 4.008);
 function calcCircumfrence(radius) {
 	var circumfrence = 2 * Math.PI * radius;
 	alert("The circumference is " + circumfrence.toFixed(4) + ".");
-}
+};
 
 calcCircumfrence(3);
 
 function calcArea(radius) {
 	var area = Math.PI * radius * radius;
 	alert("the area is " + area.toFixed(4) + ".");
-}
+};
 
 calcArea(6);
 
@@ -95,14 +95,23 @@ calcArea(6);
 
 function celsiusToFahrenheit(celsius) {
 	var fahrenheit = (celsius * (9/5)) + 32;
-	alert(celsius + "\xB0C is " + fahrenheit + "\xB0F.");
-}
+	alert(celsius + "\xB0C is " + fahrenheit.toFixed(2) + "\xB0F.");
+};
 
-celsiusToFahrenheit(32);
+var celsius = 32 
+celsiusToFahrenheit(celsius);
 
 // Store a celsius temperature into a variable.
 // Convert it to fahrenheit and output "NN°C is NN°F".
 // Create a function called fahrenheitToCelsius:
+
+function fahrenheitToCelsius(fahrenheit) {
+	var celsius = (fahrenheit - 32) * (5/9);
+	alert(fahrenheit + "\xB0F is " + celsius.toFixed(2) + "\xB0C.");
+};
+
+var fahrenheit = 98;
+fahrenheitToCelsius(fahrenheit);
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
