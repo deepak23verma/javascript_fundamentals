@@ -13,9 +13,9 @@ function tellFortune(numberOfChildren, partnersName, geographicLocation, jobTitl
 	alert("You will be a " + jobTitle + " in " + geographicLocation + ", and married to " + partnersName + " with " + numberOfChildren + " kids.");
 }
 
-tellFortune(5, "Veroncia", "New York", "Baseball Player")
-tellFortune(12, "Natalie Portman", "Mumbai", "Movie Star")
-tellFortune(5, "The Universe", "South Pacific", "Yoga Instructor")
+tellFortune(5, "Veroncia", "New York", "Baseball Player");
+tellFortune(12, "Natalie Portman", "Mumbai", "Movie Star");
+tellFortune(5, "The Universe", "South Pacific", "Yoga Instructor");
 
 
 // EXERCISE: The Age Calculator
@@ -35,10 +35,10 @@ function calculateAge(birthYear, currentYear) {
 	alert("You are either " + age1 + " or " + age2 + ".");
 }
 
-var currentYear = (new Date()).getFullYear()
-calculateAge(1977, currentYear)
-calculateAge(1987, currentYear)
-calculateAge(1979, currentYear)
+var currentYear = (new Date()).getFullYear();
+calculateAge(1977, currentYear);
+calculateAge(1987, currentYear);
+calculateAge(1979, currentYear);
 
 // EXERCISE: The Lifetime Supply Calculator
 
@@ -51,14 +51,14 @@ calculateAge(1979, currentYear)
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
 function calculateSuppy(age, amountPerDay) {
-	var constantMaxAge = 92
-	var supplyNeeded = ((constantMaxAge - age) * 365) * amountPerDay
-	alert("You will need " + supplyNeeded.toFixed(0) + " to last you until the ripe old age of " + constantMaxAge + ".")
+	var constantMaxAge = 92;
+	var supplyNeeded = ((constantMaxAge - age) * 365) * amountPerDay;
+	alert("You will need " + supplyNeeded.toFixed(0) + " to last you until the ripe old age of " + constantMaxAge + ".");
 }
 
-calculateSuppy(14, 8.3)
-calculateSuppy(36, 1.123)
-calculateSuppy(27, 4.008)
+calculateSuppy(14, 8.3);
+calculateSuppy(36, 1.123);
+calculateSuppy(27, 4.008);
 
 
 // EXERCISE: The Geometrizer
@@ -73,6 +73,12 @@ calculateSuppy(27, 4.008)
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+function calcCircumfrence (radius) {
+	var circumfrence = 2 * Math.PI * radius;
+	alert("The circumference is " + circumfrence + ".");
+}
+
+calcCircumfrence(3);
 
 // EXERCISE: The Temperature Converter
 
