@@ -21,6 +21,12 @@ var JobTitle = "Greeter"
 // Store their birth year in a variable.
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
+var CurrentYear = 2013
+var BirthYear = 1987
+var PossibleAge1 = CurrentYear - BirthYear
+var PossibleAge2 = PossibleAge1 - 1
+
+"They are either " + PossibleAge + " or " + PossibleAge2 + "."
 
 // EXERCISE: The Lifetime Supply Calculator
 
