@@ -6,6 +6,12 @@
 
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+var NumberOfChildren = 5
+var PartnersName = "Veronica"
+var GeographicLocation = "Top of Mount Everest"
+var JobTitle = "Greeter"
+
+"You will be a " + JobTitle + " at the " + GeographicLocation + ", and married to " + PartnersName + " with " + NumberOfChildren + " kids."
 
 // EXERCISE: The Age Calculator
 
