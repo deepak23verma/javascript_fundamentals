@@ -29,6 +29,30 @@ greaterNum(6, 6);
 // returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
 // Call that function for each of the supported languages and log the result to make sure it works.
 
+function helloWorld (languageCode) {
+	if (languageCode == "es") {
+		alert("hola mundo");
+	}
+	else if (languageCode == "fr") {
+		alert("Bonjour tout le monde");
+	}
+	else if (languageCode == "hn") {
+		alert("हैलो दुनिया");
+	}
+	else {
+		alert("Hello World");
+	}
+}
+var spanish = "es"
+var french = "fr"
+var hindi = "hn"
+var japanese = "jp"
+
+helloWorld(spanish);
+helloWorld(french);
+helloWorld(hindi);
+helloWorld(japanese);
+
 // EXERCISE: The Grade Assigner
 
 // Write a function named assignGrade that:
