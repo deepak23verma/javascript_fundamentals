@@ -50,6 +50,16 @@ calculateAge(1979, currentYear)
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+function calculateSuppy(age, amountPerDay) {
+	var constantMaxAge = 92
+	var supplyNeeded = ((constantMaxAge - age) * 365) * amountPerDay
+	alert("You will need " + supplyNeeded.toFixed(0) + " to last you until the ripe old age of " + constantMaxAge + ".")
+}
+
+calculateSuppy(14, 8.3)
+calculateSuppy(36, 1.123)
+calculateSuppy(27, 4.008)
+
 
 // EXERCISE: The Geometrizer
 
