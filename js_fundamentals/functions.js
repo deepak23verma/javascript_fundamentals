@@ -73,12 +73,19 @@ calculateSuppy(27, 4.008);
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
-function calcCircumfrence (radius) {
+function calcCircumfrence(radius) {
 	var circumfrence = 2 * Math.PI * radius;
-	alert("The circumference is " + circumfrence + ".");
+	alert("The circumference is " + circumfrence.toFixed(4) + ".");
 }
 
 calcCircumfrence(3);
+
+function calcArea(radius) {
+	var area = Math.PI * radius * radius;
+	alert("the area is " + area.toFixed(4) + ".");
+}
+
+calcArea(6);
 
 // EXERCISE: The Temperature Converter
 
