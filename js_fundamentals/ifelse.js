@@ -59,6 +59,29 @@ helloWorld(japanese);
 // takes 1 argument, a number score.
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
+function assignGrade (score) {
+	if (score > 80) {
+		alert("You got an A! GREAT WORK!!!");
+	}
+	else if (score >= 70 ) {
+		alert("You got a B! Congratulations on a great year");
+	}
+	else if (score >= 60) {
+		alert("You got a C, not bad");
+	}
+	else if (score >= 50) {
+		alert("You just passed with a D");
+	}
+	else {
+		alert("You FAILED!");
+	}
+}
+
+assignGrade(95);
+assignGrade(72);
+assignGrade(68);
+assignGrade(51);
+assignGrade(48);
 
 // EXERCISE: The Pluralizer
 
