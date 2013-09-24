@@ -93,6 +93,13 @@ calcArea(6);
 
 // Create a function called celsiusToFahrenheit:
 
+function celsiusToFahrenheit(celsius) {
+	var fahrenheit = (celsius * (9/5)) + 32;
+	alert(celsius + "\xB0C is " + fahrenheit + "\xB0F.");
+}
+
+celsiusToFahrenheit(32);
+
 // Store a celsius temperature into a variable.
 // Convert it to fahrenheit and output "NN°C is NN°F".
 // Create a function called fahrenheitToCelsius:
