@@ -62,10 +62,17 @@ var circumference = 2 * pi * radius;
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
+var celsius = 38;
+var fahrenheit = (celsius * (9/5)) + 32;
+celsius + "°C is " + fahrenheit + "°F.";
 
 // Store a celsius temperature into a variable.
 // Convert it to fahrenheit and output "NN°C is NN°F".
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+var fahrenheit = 92;
+var celsius = (fahrenheit - 32) * (5/9);
+fahrenheight + "°F is " + celsius + "°C.";
+
 
 
