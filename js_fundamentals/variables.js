@@ -6,12 +6,12 @@
 
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
-var NumberOfChildren = 5
+var NumberOfChildren = 5;
 var PartnersName = "Veronica"
-var GeographicLocation = "Top of Mount Everest"
-var JobTitle = "Greeter"
+var GeographicLocation = "Top of Mount Everest";
+var JobTitle = "Greeter";
 
-"You will be a " + JobTitle + " at the " + GeographicLocation + ", and married to " + PartnersName + " with " + NumberOfChildren + " kids."
+"You will be a " + JobTitle + " at the " + GeographicLocation + ", and married to " + PartnersName + " with " + NumberOfChildren + " kids.";
 
 // EXERCISE: The Age Calculator
 
@@ -21,12 +21,12 @@ var JobTitle = "Greeter"
 // Store their birth year in a variable.
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
-var CurrentYear = 2013
-var BirthYear = 1987
-var PossibleAge1 = CurrentYear - BirthYear
-var PossibleAge2 = PossibleAge1 - 1
+var CurrentYear = 2013;
+var BirthYear = 1987;
+var PossibleAge1 = CurrentYear - BirthYear;
+var PossibleAge2 = PossibleAge1 - 1;
 
-"They are either " + PossibleAge + " or " + PossibleAge2 + "."
+"They are either " + PossibleAge + " or " + PossibleAge2 + ".";
 
 // EXERCISE: The Lifetime Supply Calculator
 
@@ -37,6 +37,14 @@ var PossibleAge2 = PossibleAge1 - 1
 // Store an estimated amount per day (as a number).
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
+var CurrentAge = 36;
+var MaximumAge = 124;
+var EstAmountPerDay = 2;
+var LifeTimeSupply = ((MaximumAge - CurrentAge) * 365) * EstAmountPerDay;
+
+"You will need " + LifeTimeSupply + " to last you until the ripe old age of " + MaximumAge + ".";
+
+
 
 // EXERCISE: The Geometrizer
 
