@@ -6,6 +6,21 @@
 // takes 2 arguments, both numbers.
 // returns whichever number is the greater (higher) number.
 // Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
+function greaterNum(num1, num2){
+	if (num1 > num2){
+		alert("The greater number of " + num1 + " and " + num2 + " is " + num1);
+	}
+	else if (num1 < num2){
+		alert("The greater number of " + num1 + " and " + num2 + " is " + num2);
+	}
+	else{
+		alert(num1 + " and " + num2 + " are equal");
+	}
+};
+
+greaterNum(10, 6);
+greaterNum(6, 10);
+greaterNum(6, 6);
 
 // EXERCISE: The World Translator
 
