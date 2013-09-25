@@ -9,7 +9,11 @@
 // Modify the source of the logo IMG so that it's a Yahoo logo instead.
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
+var logo = document.getElementById("hplogo");
+logo.style.backgroundImage="url(http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f_p_101x50_frontpage.png)";
 
+var searchButton = document.getElementById("gbqfsa");
+searchButton.innerHTML = "Yahoo is the new Google!";
 // EXERCISE: About Me
 
 // Cuz every webpage needs an "About" section.
