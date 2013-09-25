@@ -14,28 +14,31 @@ logo.style.backgroundImage="url(http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f
 
 var searchButton = document.getElementById("gbqfsa");
 searchButton.innerHTML = "Yahoo is the new Google!";
+
 // EXERCISE: About Me
 
 // Cuz every webpage needs an "About" section.
 
 // Start with this HTML and save it as "aboutme.html":
-// <!DOCTYPE html>
-// <html>
-//  <head>
-//   <meta charset="utf-8"/>
-//   <title>About Me</title>
-// </head>
-// <body>
-//   <h1>About Me</h1>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
   
-//   <ul>
-//     <li>Nickname: <span id="nickname"></span>
-//     <li>Favorites:  <span id="favorites"></span>
-//     <li>Hometown: <span id="hometown"></span>
-//    </ul>
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+  </ul>
+
+  <script type="text/javascript"></script>
   
-//  </body>
-// </html>
+ </body>
+</html>
   
 // Add a script tag to the bottom.
 // Change the body style so it has a font-family of "Arial, sans-serif".

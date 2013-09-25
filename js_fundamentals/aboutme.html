@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+  
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+  
+  <script type="text/javascript">
+  	document.getElementsByTagName('body')[0].style["font-family"]="Arial, sans-serif";
+  	document.getElementById('nickname').innerHTML = "Dee";
+  	document.getElementById('favorites').innerHTML = "Basketball, Yoga, Reading, Helping others";
+  	document.getElementById('hometown').innerHTML = "Toronto";
+
+  	// 1. Create the style element
+  	// 2. Add the .listitem style to my new element
+  	// 3. Append the listitem to the head tag
+		var listItemStyle = document.createElement('style');
+		listItemStyle.innerHTML = ".listitem { color: red; }";
+		document.getElementsByTagName('head')[0].appendChild(listItemStyle);
+
+  	for (i = 0; i <= document.getElementsByTagName('li').length - 1; i++) {
+  		var lineItem = document.getElementsByTagName('li')[i];
+  		lineItem.className = "listitem";
+  	}
+  </script>
+
+ </body>
+</html>
