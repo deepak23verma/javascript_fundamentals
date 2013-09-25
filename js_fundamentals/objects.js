@@ -13,6 +13,23 @@
 // cumin
 // cocoa
 
+function ingredients(recipe) {
+	console.log(recipe.title);
+	console.log("Serves " + recipe.serves);
+	for (var i = 0; i < recipe.ingredients.length; i++) {
+		console.log(recipe.ingredients[i]);
+	}
+}
+
+var favoritRecipe = {
+	title: "Mole",
+	serves: 2,
+	ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+
+ingredients(favoritRecipe);
+
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
