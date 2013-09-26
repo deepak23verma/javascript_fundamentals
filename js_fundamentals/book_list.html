@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>My Book List</title>
+</head>
+<body>
+
+  <h1>My Book List</h1>
+
+  <script type="text/javascript">
+
+    var books = [{title: "The Alchamist", author: "Paulo Cohelo", alreadyRead: true, imageSource: "http://d202m5krfqbpi5.cloudfront.net/books/1287827991l/865.jpg"}, {title: "Eloquent Ruby", author: "Russ Olsen", alreadyRead: false, imageSource: "http://www.rubyinside.com/wp-content/uploads/2011/02/eloquent-ruby-229x300.jpg"}, {title: "The Art of Happiness", author: "Dalai Lama", alreadyRead: true, imageSource: "http://upload.wikimedia.org/wikipedia/en/thumb/e/ee/The_Art_of_Happiness.jpg/240px-The_Art_of_Happiness.jpg"}];
+
+    //FIRST EXERCISE//
+    for (var i = 0; i <= books.length - 1; i++) {
+      var paragraph = document.createElement('p');
+      document.getElementsByTagName('body')[0].appendChild(paragraph);
+      document.getElementsByTagName('p')[i].innerHTML = "Book Title: " + books[i].title + " and Author: " + books[i].author;
+    };
+
+    //STRETCH EXERCISE//
+    var list = document.createElement('ul');
+    document.getElementsByTagName('body')[0].appendChild(list);
+
+    for (var i = 0; i <= books.length - 1; i++) {
+      var listItem = document.createElement('li')
+      document.getElementsByTagName('ul')[0].appendChild(listItem)
+      document.getElementsByTagName('li')[i].innerHTML = "Book Title: " + books[i].title + " and Author: " + books[i].author;
+
+      var bookImg = document.createElement('img');
+      bookImg.src = books[i].imageSource;
+      document.getElementsByTagName('li')[i].appendChild(bookImg);
+    };    
+
+  </script>
+  
+ </body>
+</html>
