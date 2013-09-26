@@ -30,6 +30,16 @@
   		var lineItem = document.getElementsByTagName('li')[i];
   		lineItem.className = "listitem";
   	}
+
+  	var imgStyle = document.createElement('style');
+  	imgStyle.innerHTML = ".profile_img { height: 20em; width: auto; }";
+  	document.getElementsByTagName('head')[0].appendChild(imgStyle)
+
+  	var myImg = document.createElement('img');
+  	myImg.className = "profile_img";
+  	myImg.src = "img/HR EB 2013 - bitmaker labs 17.jpg";
+
+  	document.getElementsByTagName('body')[0].appendChild(myImg);
   </script>
 
  </body>
